@@ -25,7 +25,7 @@ export const fetchRepositories = createAsyncThunk<IResponseSchema, any, any>(
         `${API_URL}/search/repositories?q=${searchParam}&per_page=${perPage}&page=${currentPage}`,
         {
           headers: {
-            Authorization: "token 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",
+            Authorization: "token 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",
           },
         },
       );
