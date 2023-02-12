@@ -20,7 +20,7 @@ export default function RepositoriesList({ repositories }: IRepositoriesListProp
   return (
     <RepositoriesListContainer>
       {repositories.map((repos: IRepositoryItem) => {
-        return <Card key={repos.name} item={repos} />;
+        return <Card key={repos.name + repos.description} item={repos} />;
       })}
     </RepositoriesListContainer>
   );

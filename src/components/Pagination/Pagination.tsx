@@ -82,7 +82,11 @@ export default function Pagination({ pagesCount, onChange, searchParam }: IPagin
     firstPaginationNumbersValues.current = numbers[0];
     return numbers.map(item => {
       return (
-        <StyledNumber active={currentPage === item + 1} onClick={() => handlePageChange(item + 1)}>
+        <StyledNumber
+          key={String(item)}
+          active={currentPage === item + 1}
+          onClick={() => handlePageChange(item + 1)}
+        >
           {(item as number) + 1}
         </StyledNumber>
       );
