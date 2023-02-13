@@ -1,5 +1,5 @@
 # React-test-goit
-Project also include one test file , so you cab check it ;)
+Project also include one test file , so you can check it ;)
 To run this app you need :
 1) npm install
 2) create .env file , it should contain REACT_APP_API_KEY variable
