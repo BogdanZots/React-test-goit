@@ -23,11 +23,11 @@ export const fetchRepositories = createAsyncThunk<IResponseSchema, any, any>(
     try {
       const response = await axios.get<IAxiosResponse>(
         `${API_URL}/search/repositories?q=${searchParam}&per_page=${perPage}&page=${currentPage}`,
-        {
+        /*         {
           headers: {
-            Authorization: process.env.REACT_APP_API_KEY,
+            Authorization: "token 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",
           },
-        },
+        }, */
       );
       return {
         searchParam,
